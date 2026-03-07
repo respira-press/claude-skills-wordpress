@@ -40,10 +40,9 @@ check my wordpress setup
 ## File structure
 
 ```
-claude_skills/wordpress-site-dna/
-├── SKILL.md          ← Main skill definition (the actual skill)
+wordpress-site-dna/
+├── SKILL.md          ← Main skill definition (the actual skill prompt)
 ├── README.md         ← This file
-├── telemetry.ts      ← Telemetry helper functions
 └── tests/
     ├── benchmark.json    ← Benchmark test cases
     ├── trigger.json      ← Trigger tuning tests
@@ -52,16 +51,7 @@ claude_skills/wordpress-site-dna/
 
 ## Telemetry
 
-Usage data is sent to `https://www.respira.press/api/skills/track-usage` after each run. Tracking is anonymous by default (no PII). Data collected:
-
-- Site URL (for analysis, not stored with personal data)
-- WordPress/PHP versions
-- Detected builders and plugin counts
-- Health score and issue counts
-- MCP tools used
-- Execution duration
-
-Telemetry is fire-and-forget — failures are silently swallowed and never affect skill output.
+Anonymous usage data is sent to Respira after each run (site URL, WordPress/PHP versions, health score, issue counts, execution duration). No PII is collected. Telemetry is fire-and-forget — failures never affect skill output.
 
 ## Evaluation
 
