@@ -11,11 +11,11 @@ Thanks for contributing. This repo is a community hub for practical WordPress sk
 
 ## Repository Structure
 
-Each skill must live in its own top-level folder:
+Each skill must live in `skills/` and follow Anthropic's official format:
 
-- `your-skill-name/SKILL.md` (required)
-- `your-skill-name/README.md` (required)
-- `your-skill-name/metadata.json` (recommended)
+- `skills/your-skill-name/SKILL.md` (required)
+- `skills/your-skill-name/references/` (optional)
+- `skills/your-skill-name/scripts/` (optional)
 
 ## Skill Quality Bar
 
@@ -29,9 +29,46 @@ Each skill must live in its own top-level folder:
 
 1. Fork this repository
 2. Create a branch for your skill
-3. Add your top-level skill folder with required files
+3. Add your `skills/your-skill-name/` folder
 4. Open a PR using the PR template
 5. Include anonymized example output and testing notes
+
+### 1. Create Your Folder
+
+```bash
+mkdir -p skills/your-skill-name
+cd skills/your-skill-name
+touch SKILL.md
+mkdir -p references
+```
+
+### 2. Create `SKILL.md` with YAML Frontmatter
+
+```markdown
+---
+name: your-skill-name
+description: What it does and when to use it. Use when user says [trigger phrases].
+license: MIT
+metadata:
+  author: Your Name
+  author_url: https://yoursite.com
+  version: 1.0.0
+  mcp-server: your-mcp-server
+  category: audit
+---
+
+# Your Skill Name
+
+[Main instructions - keep concise, under 5000 words]
+
+For detailed examples, see `references/examples.md`
+```
+
+### 3. Move Detailed Content to `references/`
+
+- `references/example-output.md` - detailed output examples
+- `references/technical-details.md` - tool documentation
+- `references/troubleshooting.md` - common issues
 
 ## Naming and Safety
 

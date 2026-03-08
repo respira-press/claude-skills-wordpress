@@ -3,9 +3,11 @@ name: Validate Skill Submission
 on:
   pull_request:
     paths:
-      - '**/SKILL.md'
-      - '**/README.md'
-      - '**/metadata.json'
+      - 'skills/**/SKILL.md'
+      - 'skills/**/references/**'
+      - 'skills/**/scripts/**'
+      - 'README.md'
+      - 'CONTRIBUTING.md'
       - '.github/workflows/validate-skill.yml'
 
 jobs:
@@ -17,28 +19,39 @@ jobs:
       - name: Validate skill folder structure
         run: |
           set -euo pipefail
-          for dir in */ ; do
-            [ "$dir" = ".github/" ] && continue
-            [ "$dir" = ".git/" ] && continue
+          test -d skills || { echo "Missing skills/ directory"; exit 1; }
+
+          for dir in skills/*/ ; do
             skill_dir="${dir%/}"
             if [ ! -f "$skill_dir/SKILL.md" ]; then
               echo "Missing SKILL.md in $skill_dir"
               exit 1
             fi
-            if [ ! -f "$skill_dir/README.md" ]; then
-              echo "Warning: Missing README.md in $skill_dir (legacy folders tolerated)"
+
+            if grep -qE '^---$' "$skill_dir/SKILL.md"; then
+              :
+            else
+              echo "Missing YAML frontmatter delimiter in $skill_dir/SKILL.md"
+              exit 1
+            fi
+
+            if [ -f "$skill_dir/README.md" ]; then
+              echo "Disallowed: $skill_dir/README.md (move details into references/)"
+              exit 1
+            fi
+
+            if [ -f "$skill_dir/metadata.json" ]; then
+              echo "Disallowed: $skill_dir/metadata.json (use YAML frontmatter in SKILL.md)"
+              exit 1
             fi
           done
 
-      - name: Validate metadata.json when present
+      - name: Check SKILL.md frontmatter keys
         run: |
           set -euo pipefail
-          found=false
-          while IFS= read -r metadata; do
-            found=true
-            echo "Checking $metadata"
-            jq empty "$metadata"
-          done < <(find . -mindepth 2 -maxdepth 2 -name metadata.json -type f | sort)
-          if [ "$found" = false ]; then
-            echo "No metadata.json files found; skipping JSON checks"
-          fi
+          for skill in skills/*/SKILL.md; do
+            echo "Checking $skill"
+            head -n 40 "$skill" | grep -q '^name:' || { echo "Missing name: in $skill"; exit 1; }
+            head -n 40 "$skill" | grep -q '^description:' || { echo "Missing description: in $skill"; exit 1; }
+            head -n 40 "$skill" | grep -q '^license:' || { echo "Missing license: in $skill"; exit 1; }
+          done

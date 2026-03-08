@@ -21,15 +21,14 @@ Brief description of what this skill does and what problem it solves.
 
 - [ ] Tested on at least 3 real WordPress sites
 - [ ] All requirements documented
-- [ ] Example output included in README
-- [ ] SKILL.md follows standard structure
-- [ ] metadata.json is complete and valid
+- [ ] SKILL.md follows standard structure with YAML frontmatter
+- [ ] Detailed examples included under `references/`
 
 ## Files Included
 
-- [ ] your-skill-name/SKILL.md
-- [ ] your-skill-name/README.md
-- [ ] your-skill-name/metadata.json
+- [ ] skills/your-skill-name/SKILL.md
+- [ ] skills/your-skill-name/references/example-output.md (optional)
+- [ ] skills/your-skill-name/references/technical-details.md (optional)
 
 ## Example Output
 

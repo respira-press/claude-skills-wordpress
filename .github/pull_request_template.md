@@ -2,9 +2,9 @@
 
 - [ ] Skill solves a real WordPress problem
 - [ ] Tested on 3+ real WordPress sites
-- [ ] SKILL.md follows standard structure
-- [ ] README.md includes installation and usage
-- [ ] metadata.json is complete and valid
+- [ ] SKILL.md follows standard structure with YAML frontmatter
+- [ ] Detailed examples/technical docs are in `references/` (if needed)
+- [ ] No skill-level README.md or metadata.json included
 - [ ] All requirements documented
 - [ ] Example output included
 - [ ] No hardcoded credentials

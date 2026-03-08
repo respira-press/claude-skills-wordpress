@@ -5,7 +5,7 @@ The community hub for WordPress AI workflows.
 Skills that run inside Claude to analyze, audit, optimize, and fix WordPress sites.  
 Built by the community. Curated by Respira. Open source.
 
-**Live Directory:** https://www.respira.press/skills
+**🌐 Live Directory:** https://www.respira.press/skills
 
 ---
 
@@ -14,40 +14,56 @@ Built by the community. Curated by Respira. Open source.
 Skills teach Claude how to work with WordPress in ways that respect your site's architecture and your need for control.
 
 **Plain Claude:** Generic guidance based on best practices  
-**Respira for WordPress-powered skills:** Deep site access via 103+ MCP tools
+**Respira-powered skills:** Deep site access via 103+ MCP tools
 
 ---
 
 ## Available Skills
 
-### Audit Skills
+### 🔍 Audit Skills
 
-**[WordPress Site DNA](./wordpress-site-dna/)**  
+**[WordPress Site DNA](skills/wordpress-site-dna)**  
 Comprehensive site archaeology: builders, plugins, content structure, technical debt.  
-*By Respira Team*
+*By Respira for WordPress*
 
-**[Technical Debt Audit](./technical-debt-audit/)**  
+**[Technical Debt Audit](skills/technical-debt-audit)**  
 Finds orphaned shortcodes, unused plugins, database bloat, inactive builder data.  
-*By Respira Team*
+*By Respira for WordPress*
 
-**[WooCommerce Health Check](./woocommerce-health-check/)**  
+**[WooCommerce Health Check](skills/woocommerce-health-check)**  
 Store diagnostics: checkout issues, cart problems, payment gateway configuration.  
-*By Respira Team* · Requires WooCommerce add-on
+*By Respira for WordPress* · Requires WooCommerce add-on
 
-**[Mobile Experience Report](./mobile-experience-report/)**  
+**[Mobile Experience Report](skills/mobile-experience-report)**  
 Mobile layout analysis: responsive breakpoints, touch targets, navigation issues.  
-*By Respira Team*
+*By Respira for WordPress*
 
-### Performance Skills
+### ⚡ Performance Skills
 
-**[SEO & AEO Amplifier](./seo-aeo-amplifier/)**  
-Comprehensive on-page SEO and AEO optimization with automated duplicate creation.  
-Scans all content, generates intelligent schema markup, fixes titles/meta/headings.  
-*By Respira Team*
+**[SEO & AEO Amplifier](skills/seo-aeo-amplifier)**  
+On-page SEO and Answer Engine Optimization with automated schema generation.  
+*By Respira for WordPress*
 
-**[WordPress AI Image Optimizer](./wordpress-ai-image-optimizer/)**  
-AI-powered image optimization: compress, convert to WebP, resize, rename. AI downloads images, processes locally, uploads optimized versions, and updates all references.  
-*By Respira Team*
+**[WordPress AI Image Optimizer](skills/wordpress-ai-image-optimizer)**  
+AI-powered image optimization: compress, convert to WebP, resize, rename.  
+*By Respira for WordPress*
+
+---
+
+## Skill Structure
+
+Each skill follows Anthropic's official format:
+
+````
+skills/skill-name/
+├── SKILL.md (with YAML frontmatter - main instructions)
+├── references/ (optional - detailed docs)
+│   ├── example-output.md
+│   └── technical-details.md
+└── scripts/ (optional - executable code)
+````
+
+**No README.md or metadata.json inside skill folders** - all documentation goes in SKILL.md or references/
 
 ---
 
@@ -55,7 +71,7 @@ AI-powered image optimization: compress, convert to WebP, resize, rename. AI dow
 
 **We want skills that solve real problems on real WordPress sites.**
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for:
+See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 - How to submit a skill
 - Quality standards
 - Skill structure requirements
@@ -63,31 +79,31 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for:
 
 **Quick start:**
 1. Fork this repo
-2. Create your skill in `your-skill-name/`
-3. Include `SKILL.md` and `README.md` (and `metadata.json` if available)
+2. Create your skill in `skills/your-skill-name/`
+3. Include SKILL.md with YAML frontmatter
 4. Test on 3+ real WordPress sites
 5. Submit PR
 
-[Read Full Guidelines ->](./CONTRIBUTING.md)
+[Read Full Guidelines →](CONTRIBUTING.md)
 
 ---
 
 ## Recognition
 
 Accepted skills get:
-- Featured in https://respira.press/skills directory
-- Author attribution with link to your site/GitHub
-- Usage stats shared monthly
-- Promotion in newsletter and social channels
-- Your name in contributors list
+- ✅ Featured in https://respira.press/skills directory
+- ✅ Author attribution with link to your site/GitHub
+- ✅ Usage stats shared monthly
+- ✅ Promotion in newsletter and social channels
+- ✅ Your name in contributors list
 
 ---
 
 ## Support
 
 **Questions?**
-- Issues: https://github.com/webmyc/claude-skills-wordpress/issues
-- Discord: https://go.respira.cafe/respira-discord
+- Issues: [GitHub Issues](https://github.com/webmyc/claude-skills-wordpress/issues)
+- Discord: [Join Respira Discord](https://go.respira.cafe/respira-discord)
 - Email: word@respira.press
 
 **Found a bug in a skill?**  
@@ -108,4 +124,4 @@ All skills are MIT licensed. By contributing, you agree to license your skill un
 
 Browse all skills: https://www.respira.press/skills
 
-Built by the WordPress community. Curated by Respira.
+Built by the WordPress community. Curated by Respira for WordPress.
