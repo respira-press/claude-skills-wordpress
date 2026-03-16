@@ -2,25 +2,31 @@
 
 The community hub for WordPress AI workflows.
 
-Skills that run inside Claude to analyze, audit, optimize, and fix WordPress sites.  
+Skills that run inside Claude, Codex, Cursor, and any AI agent that supports Skills + MCP to analyze, audit, optimize, and fix WordPress sites.  
 Built by the community. Curated by Respira. Open source.
 
-**🌐 Live Directory:** https://www.respira.press/skills
+**Live Directory:** https://www.respira.press/skills
 
 ---
 
 ## What Are Skills?
 
-Skills teach Claude how to work with WordPress in ways that respect your site's architecture and your need for control.
+Skills teach AI agents how to work with WordPress in ways that respect your site's architecture and your need for control.
 
-**Plain Claude:** Generic guidance based on best practices  
+**Plain AI agent:** Generic guidance based on best practices  
 **Respira-powered skills:** Deep site access via 103+ MCP tools
 
 ---
 
 ## Available Skills
 
-### 🔍 Audit Skills
+### Onboarding
+
+**[Site Onboarding](skills/site-onboarding)**  
+First-run primer: verifies MCP connection, discovers site architecture, maps all capabilities, recommends marketplace skills.  
+*By Respira for WordPress*
+
+### Audit Skills
 
 **[WordPress Site DNA](skills/wordpress-site-dna)**  
 Comprehensive site archaeology: builders, plugins, content structure, technical debt.  
@@ -38,14 +44,24 @@ Store diagnostics: checkout issues, cart problems, payment gateway configuration
 Mobile layout analysis: responsive breakpoints, touch targets, navigation issues.  
 *By Respira for WordPress*
 
-### ⚡ Performance Skills
+### Performance Skills
 
 **[SEO & AEO Amplifier](skills/seo-aeo-amplifier)**  
 On-page SEO and Answer Engine Optimization with automated schema generation.  
 *By Respira for WordPress*
 
 **[WordPress AI Image Optimizer](skills/wordpress-ai-image-optimizer)**  
-AI-powered image optimization: compress, convert to WebP, resize, rename.  
+AI-powered image optimization: compress, convert to WebP, resize, rename, alt text, and update references.  
+*By Respira for WordPress*
+
+**[Internal Link Builder](skills/internal-link-builder)**  
+Strategic internal link building: scans content, maps topic relationships, finds linking opportunities, applies with duplicate-first safety.  
+*By Respira for WordPress*
+
+### Migration Skills
+
+**[Content Portability](skills/content-portability)**  
+Export WordPress content to portable local packages with builder data, media, and markdown previews. Import to another site with smart ID remapping. Auto-backup before AI edits. Diff local exports against live site.  
 *By Respira for WordPress*
 
 ---
@@ -91,11 +107,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 ## Recognition
 
 Accepted skills get:
-- ✅ Featured in https://respira.press/skills directory
-- ✅ Author attribution with link to your site/GitHub
-- ✅ Usage stats shared monthly
-- ✅ Promotion in newsletter and social channels
-- ✅ Your name in contributors list
+- Featured in https://respira.press/skills directory
+- Author attribution with link to your site/GitHub
+- Usage stats shared monthly
+- Promotion in newsletter and social channels
+- Your name in contributors list
 
 ---
 
