@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "updated_at": "2026-03-16",
+  "version": "1.1.0",
+  "updated_at": "2026-03-27",
   "skills": [
     {
       "slug": "site-onboarding",
@@ -101,7 +101,7 @@
     {
       "slug": "content-portability",
       "name": "Content Portability",
-      "description": "Export WordPress pages, posts, and custom posts to portable local packages with builder data, media, and human-readable markdown. Import to another site with smart ID remapping and mandatory snapshots. Auto-backup before AI edits.",
+      "description": "Export WordPress pages, posts, and custom posts to portable local packages with builder data and media, then import to another site with smart ID remapping and auto-backup safety.",
       "category": "migration",
       "author": "Respira for WordPress",
       "version": "1.0.0",
@@ -109,6 +109,198 @@
       "requires_addon": null,
       "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/content-portability",
       "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/content-portability/SKILL.md"
+    },
+    {
+      "slug": "migrate-elementor-to-bricks",
+      "name": "Migrate Elementor to Bricks",
+      "description": "Converts Elementor pages to Bricks Builder by reading Elementor JSON widget data, mapping each widget to its Bricks equivalent, and creating draft duplicates with clean Bricks JSON.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-elementor-to-bricks",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-elementor-to-bricks/SKILL.md"
+    },
+    {
+      "slug": "migrate-elementor-to-gutenberg",
+      "name": "Migrate Elementor to Gutenberg",
+      "description": "Converts Elementor pages to native WordPress Gutenberg blocks by mapping widgets to core blocks and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-elementor-to-gutenberg",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-elementor-to-gutenberg/SKILL.md"
+    },
+    {
+      "slug": "migrate-elementor-to-breakdance",
+      "name": "Migrate Elementor to Breakdance",
+      "description": "Converts Elementor pages to Breakdance Builder by mapping widgets to Breakdance elements and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-elementor-to-breakdance",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-elementor-to-breakdance/SKILL.md"
+    },
+    {
+      "slug": "migrate-elementor-to-oxygen",
+      "name": "Migrate Elementor to Oxygen",
+      "description": "Converts Elementor pages to Oxygen Builder by mapping widgets to Oxygen components and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-elementor-to-oxygen",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-elementor-to-oxygen/SKILL.md"
+    },
+    {
+      "slug": "migrate-divi-to-bricks",
+      "name": "Migrate Divi to Bricks",
+      "description": "Converts Divi pages to Bricks Builder by parsing shortcode content, mapping modules to Bricks elements, and generating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-divi-to-bricks",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-divi-to-bricks/SKILL.md"
+    },
+    {
+      "slug": "migrate-divi-to-gutenberg",
+      "name": "Migrate Divi to Gutenberg",
+      "description": "Converts Divi pages to native Gutenberg blocks by parsing shortcodes, mapping modules to core blocks, and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-divi-to-gutenberg",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-divi-to-gutenberg/SKILL.md"
+    },
+    {
+      "slug": "migrate-divi-to-breakdance",
+      "name": "Migrate Divi to Breakdance",
+      "description": "Converts Divi pages to Breakdance Builder by parsing shortcodes, mapping modules to Breakdance elements, and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-divi-to-breakdance",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-divi-to-breakdance/SKILL.md"
+    },
+    {
+      "slug": "migrate-wpbakery-to-gutenberg",
+      "name": "Migrate WPBakery to Gutenberg",
+      "description": "Converts WPBakery pages to native Gutenberg blocks by parsing shortcodes, mapping elements to core blocks, and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-wpbakery-to-gutenberg",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-wpbakery-to-gutenberg/SKILL.md"
+    },
+    {
+      "slug": "migrate-wpbakery-to-bricks",
+      "name": "Migrate WPBakery to Bricks",
+      "description": "Converts WPBakery pages to Bricks Builder by parsing shortcodes, mapping elements to Bricks equivalents, and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-wpbakery-to-bricks",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-wpbakery-to-bricks/SKILL.md"
+    },
+    {
+      "slug": "migrate-beaver-builder-to-gutenberg",
+      "name": "Migrate Beaver Builder to Gutenberg",
+      "description": "Converts Beaver Builder pages to native Gutenberg blocks by reading the flat node map, mapping modules to core blocks, and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-beaver-builder-to-gutenberg",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-beaver-builder-to-gutenberg/SKILL.md"
+    },
+    {
+      "slug": "migrate-beaver-builder-to-bricks",
+      "name": "Migrate Beaver Builder to Bricks",
+      "description": "Converts Beaver Builder pages to Bricks Builder by reading the flat node map, mapping modules to Bricks elements, and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-beaver-builder-to-bricks",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-beaver-builder-to-bricks/SKILL.md"
+    },
+    {
+      "slug": "migrate-oxygen-to-bricks",
+      "name": "Migrate Oxygen to Bricks",
+      "description": "Converts Oxygen Builder pages to Bricks by mapping component trees to Bricks JSON elements and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-oxygen-to-bricks",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-oxygen-to-bricks/SKILL.md"
+    },
+    {
+      "slug": "migrate-oxygen-to-breakdance",
+      "name": "Migrate Oxygen to Breakdance",
+      "description": "Converts Oxygen Builder pages to Breakdance by mapping component trees to Breakdance elements and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-oxygen-to-breakdance",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-oxygen-to-breakdance/SKILL.md"
+    },
+    {
+      "slug": "migrate-brizy-to-gutenberg",
+      "name": "Migrate Brizy to Gutenberg",
+      "description": "Converts Brizy pages to native Gutenberg blocks by parsing Brizy JSON data, mapping elements to core blocks, and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-brizy-to-gutenberg",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-brizy-to-gutenberg/SKILL.md"
+    },
+    {
+      "slug": "migrate-thrive-architect-to-gutenberg",
+      "name": "Migrate Thrive Architect to Gutenberg",
+      "description": "Converts Thrive Architect pages to native Gutenberg blocks by parsing Thrive content, mapping elements to core blocks, and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-thrive-architect-to-gutenberg",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-thrive-architect-to-gutenberg/SKILL.md"
+    },
+    {
+      "slug": "migrate-visual-composer-to-gutenberg",
+      "name": "Migrate Visual Composer to Gutenberg",
+      "description": "Converts Visual Composer pages to native Gutenberg blocks by parsing VC data, mapping elements to core blocks, and creating draft duplicates for review.",
+      "category": "migration",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/migrate-visual-composer-to-gutenberg",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/migrate-visual-composer-to-gutenberg/SKILL.md"
     }
   ]
 }
