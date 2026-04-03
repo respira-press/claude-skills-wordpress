@@ -1,7 +1,19 @@
 {
-  "version": "1.1.0",
-  "updated_at": "2026-03-27",
+  "version": "1.2.0",
+  "updated_at": "2026-04-03",
   "skills": [
+    {
+      "slug": "respira-setup-assistant",
+      "name": "Respira Setup Assistant",
+      "description": "Diagnose your Respira MCP connection, walk through first-time setup, and fix common connection problems (timeouts, 401s, 403s, version mismatches).",
+      "category": "onboarding",
+      "author": "Respira for WordPress",
+      "version": "1.0.0",
+      "mcp_server": "respira-wordpress",
+      "requires_addon": null,
+      "github_url": "https://github.com/webmyc/claude-skills-wordpress/tree/main/skills/respira-setup-assistant",
+      "raw_url": "https://raw.githubusercontent.com/webmyc/claude-skills-wordpress/main/skills/respira-setup-assistant/SKILL.md"
+    },
     {
       "slug": "site-onboarding",
       "name": "Site Onboarding",
